@@ -7,7 +7,7 @@ const uuidv4 = require('uuid/v4');
 var uuid = uuidv4();
 
 
-console.log('Regist Akun Gojek -> Set Pin -> Redeem GOFOODNASGOR07\n');
+console.log('Regist Akun Gojek -> Set Pin -> Redeem PROMO\n');
 const phoneNumber = readlineSync.question('Masukan No Hp: ');
 
 const genUniqueId = length =>
@@ -167,7 +167,7 @@ const functionSendOtpSetPin = (pin, otpPin, accessToken, uuid, uniqid) => new Pr
 	const url = 'https://api.gojekapi.com/wallet/pin';
 
 	const boday = {
-		"pin":pin
+		"pin":161616
 	};
 
 	fetch (url, {
@@ -205,7 +205,7 @@ const functionRedeem = (accessToken, uuid, uniqid) => new Promise((resolve, reje
 	const url = 'https://api.gojekapi.com/go-promotions/v1/promotions/enrollments';
 
 	const boday = {
-		"promo_code":"CIRCLEK17"
+		"promo_code":"JAJANPAKEGOPAY"
 };
 
 	fetch (url, {
