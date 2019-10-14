@@ -205,7 +205,7 @@ const functionRedeem = (accessToken, uuid, uniqid) => new Promise((resolve, reje
 	const url = 'https://api.gojekapi.com/go-promotions/v1/promotions/enrollments';
 
 	const boday = {
-		"promo_code":"JAJANPAKEGOPAY"
+		"promo_code":"GOFOODBURGER07"
 };
 
 	fetch (url, {
